@@ -3,4 +3,5 @@ export const routers = {
   '/': 'home',
   // 第二页
   '/about': 'about',
+  '/personal': 'personal',
 };
