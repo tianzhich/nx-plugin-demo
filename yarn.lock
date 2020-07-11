@@ -1693,6 +1693,11 @@
     yargs "^11.0.0"
     yargs-parser "10.0.0"
 
+"@plugindemo/plugin@file:dist/packages/plugin":
+  version "0.0.1"
+  dependencies:
+    ts-morph "^7.1.2"
+
 "@rollup/plugin-babel@5.0.2":
   version "5.0.2"
   resolved "https://npm.corp.kuaishou.com/@rollup%2fplugin-babel/-/plugin-babel-5.0.2.tgz#d9351b9545b0c586a193fc99830d4b1a25317ed5"
