@@ -1,5 +1,5 @@
 {
-  "name": "org",
+  "name": "tianzhich",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -66,6 +66,7 @@
     "ts-jest": "25.2.1",
     "ts-node": "~7.0.0",
     "tslint": "~6.0.0",
-    "typescript": "~3.8.3"
+    "typescript": "~3.8.3",
+    
   }
 }

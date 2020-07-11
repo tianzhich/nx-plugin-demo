@@ -64,7 +64,7 @@
           "builder": "@nrwl/nx-plugin:e2e",
           "options": {
             "target": "plugin:build",
-            "npmPackageName": "@org/plugin",
+            "npmPackageName": "@tianzhich/plugin",
             "pluginOutputPath": "dist/packages/plugin",
             "jestConfig": "e2e/plugin-e2e/jest.config.js",
             "tsSpecConfig": "e2e/plugin-e2e/tsconfig.spec.json"

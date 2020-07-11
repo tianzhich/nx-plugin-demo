@@ -16,7 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@org/plugin": ["packages/plugin/src/index.ts"]
+      "@tianzhich/plugin": ["packages/plugin/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
