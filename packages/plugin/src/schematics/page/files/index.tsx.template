@@ -25,7 +25,11 @@ class <%= componentName %> extends Component<Props> {
   render() {
     return (
       <div className="<% className %>">
-        Welcome to <%= componentName %>!
+        <header className="flex">
+          <Logo width="75" height="75" />
+          <h1>Welcome to <%= className %> page!</h1>
+        </header>
+        <Link to="/">Click here for home page.</Link>
       </div>
     );
   }
@@ -34,7 +38,11 @@ class <%= componentName %> extends Component<Props> {
 const <%= componentName %> = (props: Props) => {
   return (
     <div className="<%= className %>">
-      Welcome to <%= componentName %>!
+      <header className="flex">
+        <Logo width="75" height="75" />
+        <h1>Welcome to <%= className %> page!</h1>
+      </header>
+      <Link to="/">Click here for home page.</Link>
     </div>
   );
 };
