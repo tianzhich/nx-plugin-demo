@@ -8,8 +8,9 @@ import { connect } from 'react-redux';
 import { IRootState, Dispatch } from '../../store';
 <% } %>
 
-import { RouteComponentProps } from 'react-router-dom';
+import { RouteComponentProps, Link } from 'react-router-dom';
 import './index.scss';
+import { ReactComponent as Logo } from '../../app/logo.svg';
 
 <% if (connect) { %>
 type StateProps = ReturnType<typeof mapState>;
