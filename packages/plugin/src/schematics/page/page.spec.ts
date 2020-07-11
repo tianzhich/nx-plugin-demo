@@ -6,7 +6,7 @@ import { PageSchematicSchema } from './schema';
 import { updateWorkspace, names } from '@nrwl/workspace';
 
 const testRunner = new SchematicTestRunner(
-  '@tianzhich/plugin',
+  '@plugindemo/plugin',
   join(__dirname, '../../../collection.json')
 );
 
