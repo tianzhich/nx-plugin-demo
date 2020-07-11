@@ -3,9 +3,9 @@
   "name": "plugin",
   "version": "0.0.1",
   "schematics": {
-    "plugin": {
-      "factory": "./src/schematics/plugin/schematic",
-      "schema": "./src/schematics/plugin/schema.json",
+    "page": {
+      "factory": "./src/schematics/page/page",
+      "schema": "./src/schematics/page/schema.json",
       "description": "plugin schematic"
     }
   }

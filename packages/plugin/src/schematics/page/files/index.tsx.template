@@ -1,0 +1,61 @@
+<% if (classComponent) { %>
+import React, { Component } from 'react';
+<% } else { %>
+import React from 'react';
+<% } %>
+<% if (connect) { %>
+import { connect } from 'react-redux';
+import { IRootState, Dispatch } from '../../store';
+<% } %>
+
+import { RouteComponentProps } from 'react-router-dom';
+import './index.scss';
+
+<% if (connect) { %>
+type StateProps = ReturnType<typeof mapState>;
+type DispatchProps = ReturnType<typeof mapDispatch>;
+type Props = StateProps & DispatchProps & RouteComponentProps;
+<% } else { %>
+type Props = RouteComponentProps;
+<% } %>
+
+
+<% if (classComponent) { %>
+class <%= componentName %> extends Component<Props> {
+  render() {
+    return (
+      <div className="<% className %>">
+        Welcome to <%= componentName %>!
+      </div>
+    );
+  }
+}
+<% } else { %>
+const <%= componentName %> = (props: Props) => {
+  return (
+    <div className="<%= className %>">
+      Welcome to <%= componentName %>!
+    </div>
+  );
+};
+<% } %>
+
+<% if (connect) { %>
+function mapState(state: IRootState) {
+  return {
+
+  }
+}
+
+function mapDispatch(dispatch: Dispatch) {
+  return {
+
+  }
+}
+<% } %>
+
+<% if (connect) { %>
+export default connect<StateProps, DispatchProps, {}>(mapState, mapDispatch)(<%= componentName %>);
+<% } else { %>
+export default <%= componentName %>;
+<% } %>

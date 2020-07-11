@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "id": "page",
+  "title": "Create page component",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the page component",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?"
+    },
+    "project": {
+      "type": "string",
+      "description": "The project of the page component",
+      "$default": {
+        "$source": "projectName"
+      },
+      "alias": "p",
+      "x-prompt": "Which projcet would you like to add to?"
+    },
+    "classComponent": {
+      "type": "boolean",
+      "alias": "C",
+      "description": "Use class components instead of functional component.",
+      "default": false
+    },
+    "connect": {
+      "type": "boolean",
+      "alias": "c",
+      "description": "Create a connected redux component",
+      "default": false
+    }
+  },
+  "required": ["name", "project"]
+}
