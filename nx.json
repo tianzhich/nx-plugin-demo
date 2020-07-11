@@ -28,10 +28,16 @@
     "plugin-e2e": {
       "tags": [],
       "implicitDependencies": ["plugin"]
+    },
+    "my-app": {
+      "tags": []
+    },
+    "my-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["my-app"]
     }
   },
   "workspaceLayout": {
-    "appsDir": "apps",
     "libsDir": "packages"
   }
 }
